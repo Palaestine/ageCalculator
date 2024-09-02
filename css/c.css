@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home{
+    background: linear-gradient(135deg , #4203a9 , #90bafc);
+    color: #fff;
+    
+}
+.cont{
+    width: 600px;
+    padding-left: 30px;
+}
+.cont h2{
+    font-size: 60px;
+    font-weight: 700;
+}
+.cont h2 span{
+    color: #ffff76;
+}
+.input-box{
+    border-radius: 8px;
+    background: rgba(255, 255, 255, .4);
+    padding: 20px;
+}
+.input-box input{
+    width: 75%;
+    height: 45px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    position: relative;
+}
+.input-box input::-webkit-calendar-picker-indicator{
+    inset: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    background-position: calc(100% - 10px);
+    background-size: 30px;
+    cursor: pointer;
+    margin-top: 5px;
+
+}
+.input-box button{
+    padding: 0px 25px;
+    height: 38px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background: #ffff76;
+}
+.input-box button:hover{
+    background-color: yellow;
+}
+
+
+.info span{
+    color: #ffff76;
+} 
+
+@media (max-width:767px) {
+    .cont{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .cont h2{
+        font-size: 40px;
+    }
+    .input-box input{
+        width: 55%;
+        padding: 8px;
+    }
+    .input-box{
+        padding: 10px;
+    } 
+    .input-box input::-webkit-calendar-picker-indicator{
+        background-position: calc(100% - 5px);
+        background-size: 15px;
+    }
+    
+}
